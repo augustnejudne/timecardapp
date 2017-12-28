@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 375px;
+  margin: auto;
+  background: #eee;
+  overflow-x: hidden;
+  border: 1px solid #444;
+  color: #333;
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}

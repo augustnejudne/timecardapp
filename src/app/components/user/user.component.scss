@@ -1,0 +1,38 @@
+// $blue: #428bca;
+// $text: #fff;
+
+$blue: #5bc0de;
+$text: #333;
+
+.background {
+  background: $blue;
+  color: $text;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+
+.my-container {
+  position: relative;
+}
+
+.user {
+  padding-left: 3rem;
+  display: block;
+}
+
+.username {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.userjobtitle {
+  font-size: 1.8rem; 
+}
+
+span.fa {
+  font-size: 8rem;
+  margin-right: 1rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}

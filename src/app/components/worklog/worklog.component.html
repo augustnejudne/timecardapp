@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <td><strong>Date</strong></td>
+    <td><strong>Time in</strong></td>
+    <td><strong>Time out</strong></td>
+  </tr>
+  <tr>
+    <td class="date">{{ date | date:'MMM d, y'}}</td>
+    <td [ngClass]="timeIn ? 'timeIn' : ''">{{ timeIn | date:'hh:mm:ss a'}}</td>
+    <td [ngClass]="timeOut ? 'timeOut' : ''">{{ timeOut | date:'hh:mm:ss a'}}</td>
+  </tr>
+  <tr *ngFor="let log of worklogData">
+    <td>{{ log.Date | date:'MMM d, y' }}</td>
+    <td>{{ log.TimeIn | date:'hh:mm:ss a' }}</td>
+    <td>{{ log.TimeOut | date:'hh:mm:ss a' }}</td>
+  </tr>
+</table>

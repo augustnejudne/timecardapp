@@ -1,0 +1,53 @@
+$diameter: 20rem;
+
+$green: #5cb85c;
+$red: #d9534f;
+$white: #f9f9f9;
+
+.background {
+  padding: 3rem;
+  background: $white;
+}
+
+.loggedIn {
+  background: $red;
+  color: #333 !important;
+}
+
+.loggedOut {
+  background: $green;
+}
+
+.action-button {
+  height: $diameter;
+  width: $diameter;
+  margin: auto;
+  border-radius: 100rem;
+  color: #eee;
+  cursor: pointer;
+
+  //flex properties
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // shadow properties
+  box-shadow: 0 .2rem 2rem 0.2rem #555;
+  transition: all .2s;
+}
+
+.action-button:hover {
+  transform: translateY(-.5rem);
+  box-shadow: 0 .5rem 2rem 0.5rem #555;
+}
+
+.action-button:active {
+  transform: translateY(-.3rem);
+  box-shadow: 0 .3rem 2rem 0.3rem #555;
+}
+
+.action-text {
+  font-size: 3rem;
+  font-weight: bold;
+}

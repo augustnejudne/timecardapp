@@ -1,0 +1,8 @@
+<div class="background">
+  <div class="my-container">
+    <div class="action-button" [ngClass]="loggedIn ? 'loggedIn' : 'loggedOut'" (click)="onClick()">
+      <span class="action-text">{{ actionText }}</span>
+      <span class="current-time">{{ currentTime | date:'h:mm:ss a' }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+$green: #5cb85c;
+$red: #d9534f;
+
+table {
+  margin: auto;
+  width: 100%;
+  table-layout: fixed;
+  // border-collapse: collapse;
+}
+
+
+td {
+  text-align: center;
+  border: 1px solid #555;
+}
+
+.timeIn {
+  background: none;
+  animation: highlightGreen 1s linear;
+}
+
+.timeOut {
+  background: none;
+  animation: highlightRed 1s linear;
+}
+
+@keyframes highlightRed {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    background: $red;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes highlightGreen {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    background: $green;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
